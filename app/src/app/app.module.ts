@@ -10,6 +10,11 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CssComponent } from './tutorials/css/css.component';
 import { HtmlComponent } from './tutorials/html/html.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { AboutComponent } from './about/about.component';
+import { ManageComponent } from './manage/manage.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { HtmlComponent } from './tutorials/html/html.component';
     GalleryComponent,
     CarouselComponent,
     CssComponent,
-    HtmlComponent
+    HtmlComponent,
+    NavbarComponent,
+    LoginComponent,
+    RegistrationComponent,
+    AboutComponent,
+    ManageComponent
   ],
   imports: [
     BrowserModule,
