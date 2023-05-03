@@ -41,7 +41,7 @@ img{
   
   /* Centered text */
   .centered {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -50,5 +50,8 @@ img{
     border-radius: 10px;
   }
   h1{
+    position: relative;
     font-size: 50px;
+    color: #ffffff; 
+    opacity: 1;
   }
