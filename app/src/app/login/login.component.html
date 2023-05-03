@@ -1,1 +1,31 @@
-<p>login works!</p>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--Input Boxes-->
+        <form>
+            <div class="mb-3">
+              <label for="UserName" class="form-label">User Name</label>
+              <input type="T" class="form-control" id="UserName" aria-describedby="UserNameHelp" placeholder="User Name:Johhny">
+              <div id="UserNameHelp" class="form-text">We will sell email to anyone who pays.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <div id="emailHelp" class="form-text">We will also sell your password to anyone</div>
+            </div>
+            <!--Input Boxes end-->
+            <!--Buttons-->
+            <button type="button" class="btn btn-primary dd" data-bs-toggle="modal" data-bs-target="#exampleModal2">Register</button>
+            <button type="submit" class="btn btn-primary float-end">Sign In</button>
+          </form>
+          <!--Button end-->
+      </div>
+    </div>
+  </div>
+</div>
