@@ -1,0 +1,103 @@
+<br>
+<div class="container-lg container">
+    <br>
+    <h1>Users List</h1>
+    <table class="table">
+      <thead>
+          <!-- Table Entity -->
+          <tr>
+           <th scope="col" class="col col-sm-1">ID</th>
+           <th scope="col">First Name</th>
+           <th scope="col">Last Name</th>
+           <th scope="col">User Name</th>
+           <th scope="col">Password</th>
+           <th scope="col">Email</th>
+           <th scope="col">Country</th>
+           <th scope="col">City</th>
+           <th scope="col">Action</th>
+         </tr>
+         <!-- Table Entity -->
+       </thead>
+       <tbody>
+       <!-- Table body -->
+        <!-- Table Attributes -->
+         <tr *ngFor="let user of user">
+           <th scope="row" [class.selected]="user === selectedUser">{{user.id}}</th>
+           <td>{{user.fname}}</td>
+           <td>{{user.lname}}</td>
+           <td>{{user.uname}}</td>
+           <td>{{user.password}}</td>
+           <td>{{user.email}}</td>
+           <td>{{user.country}}</td>
+           <td>{{user.city}}</td>
+           <td>
+          <!-- Button trigger -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" [class.selected]="user === selectedUser" data-bs-toggle="modal" (click)="onSelect(user)" data-bs-target="#exampleModal1">
+    View
+  </button>
+<button type="button" class="btn btn-danger">Delete</button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+            <div class="modal-body" *ngIf="selectedUser">
+                    <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-12">
+                        <h1 class="form-label" [innerText]="'Details of' + ' ' + selectedUser.fname"></h1>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12">
+                        <label class="form-label col-form-label-lg">ID Number</label>
+                        <input type="number" class="form-control form-control" araia-label="Default" value="{{selectedUser.id}}" aria-describedby="inputGroup-sizing-default">
+                      </div>
+
+                        <div class="col-12">
+                          <label class="form-label col-form-label-lg">First Name</label>
+                          <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="selectedUser.fname" aria-describedby="inputGroup-sizing-default">
+                        </div>
+
+                        <div class="col-12">
+                          <label class="form-label col-form-label-lg">Last Name</label>
+                          <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="selectedUser.lname" aria-describedby="inputGroup-sizing-default">
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label col-form-label-lg">User Name</label>
+                            <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="selectedUser.uname" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                          
+                          <div class="col-12">
+                            <label class="form-label col-form-label-lg">Password</label>
+                            <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="selectedUser.password" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                          
+                          <div class="col-12">
+                            <label class="form-label col-form-label-lg">Email</label>
+                            <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="selectedUser.email" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                          
+                          <div class="col-12">
+                            <label class="form-label col-form-label-lg">Country</label>
+                            <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="selectedUser.country" aria-describedby="inputGroup-sizing-default">
+                          </div> 
+                          
+                          <div class="col-12">
+                            <label class="form-label col-form-label-lg">City</label>
+                            <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="selectedUser.city" aria-describedby="inputGroup-sizing-default">
+                          </div>                          
+                  </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>

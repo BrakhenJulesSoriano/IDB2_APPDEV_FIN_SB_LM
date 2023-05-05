@@ -1,0 +1,24 @@
+img{
+    border-radius: 10px;
+}
+.container{
+    padding: 30px;
+    border-radius: 30px;
+    opacity: 0.8;
+    background-color: white;
+    height: 900px;
+}
+div{
+    color: black;
+}
+img{
+    height: 200px;
+}
+.btn{
+    width: 200px;
+}
+.des{
+    width: 500px;
+    position: relative;
+    margin: auto;
+}
