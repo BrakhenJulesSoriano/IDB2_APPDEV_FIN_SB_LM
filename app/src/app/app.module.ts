@@ -16,11 +16,6 @@ import { RegistrationComponent } from './registration/registration.component';
 import { AboutComponent } from './about/about.component';
 import { ManageComponent } from './manage/manage.component';
 import { LightgalleryModule } from 'lightgallery/angular';
-import { ViewComponent } from './manage/view/view.component';
-import { UpdateComponent } from './manage/update/update.component';
-import { DeleteComponent } from './manage/delete/delete.component';
-import { AddComponent } from './manage/add/add.component';
-import { UserDetailsComponent } from './user-details/user-details.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -41,11 +36,6 @@ import { InMemoryDataService } from './in-memory-data.service';
     RegistrationComponent,
     AboutComponent,
     ManageComponent,
-    ViewComponent,
-    UpdateComponent,
-    DeleteComponent,
-    AddComponent,
-    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
