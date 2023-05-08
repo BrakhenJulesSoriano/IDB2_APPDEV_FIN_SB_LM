@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
+import { Sidebar2Component } from './sidebar2/sidebar2.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { InMemoryDataService } from './in-memory-data.service';
     RegistrationComponent,
     AboutComponent,
     ManageComponent,
+    Sidebar2Component,
   ],
   imports: [
     BrowserModule,
