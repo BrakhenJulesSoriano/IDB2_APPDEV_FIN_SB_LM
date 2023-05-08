@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient,HttpHeaders } from "@angular/common/http";
 import { catchError,map,tap } from "rxjs/operators";
-import { MessageService } from "./messaging.service";
+//import { MessageService } from "./messaging.service";
 import { Observable, of, pipe } from "rxjs";
 import { User } from "./User";
 import { USER } from "./user-list";
@@ -39,12 +39,12 @@ export class UserService{
     }
 
     private log(message: string){
-        this.messagingService.add(`User Service: ${message}`)
+        //this.messagingService.add(`User Service: ${message}`)
     }
     
     constructor(
         private http: HttpClient,
-        private messagingService: MessageService,
+        //private messagingService: MessageService,
     ) {}
 
     getUser(id: number ): Observable<User> {

@@ -15,7 +15,7 @@ export class ManageComponent implements OnInit{
   constructor(
     private location: Location, //for goBack method
     private route: ActivatedRoute, //provider to access the url parameter
-    //private userService: UserService, //userService
+    private userService: UserService, //userService
     ) {}
 
   users: User[] = [];
@@ -35,7 +35,7 @@ export class ManageComponent implements OnInit{
   add(fname: string): void {
     fname = fname.trim();
 
-    //if(!fname) {return;}
-    //this.userService.addUser({fname} as User).subscribe(user => {this.users.push(user)});
+    if(!fname) {return;}
+    this.userService.addUser({fname} as User).subscribe(user => {this.users.push(user)});
   }
 }
