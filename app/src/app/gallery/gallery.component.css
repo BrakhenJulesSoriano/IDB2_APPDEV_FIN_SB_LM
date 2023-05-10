@@ -27,13 +27,11 @@
   background-size: 100%;
   background-size: cover;
   background-color: white;
-  opacity: 0.8;
 }
 
 .container{
   padding: 30px;
   border-radius: 30px;
-  opacity: 0.8;
   background-color: white;
   height: 800px;
 }

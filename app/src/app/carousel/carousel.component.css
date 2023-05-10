@@ -1,0 +1,33 @@
+.grid{
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 32px auto;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .grid img {
+    width: 150%;
+    object-fit: cover;
+    background-color: white;
+  }
+  .brd{
+    border:1px solid #cecece;
+    border-radius: 25px;
+    padding: 30px;
+    background-size: 100%;
+    background-size: cover;
+    background-color: white;
+  }
+  
+  .container{
+    padding: 30px;
+    border-radius: 30px;
+    background-color: white;
+    height: 700px;
+  }
+  div{
+    color: black;
+  }

@@ -8,3 +8,12 @@
 div{
     color: black;
 }
+h1{
+    position: relative;
+    font-size: 50px;
+    color: #ffffff; 
+    opacity: 1;
+  }
+  .hr{
+    color: white;
+  }

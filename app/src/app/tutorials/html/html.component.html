@@ -1,3 +1,7 @@
+<div class="alert alert-info">
+    <strong>Info!</strong> If you prefer to learn by other means please click the here button
+    <button type="button" class="btn btn-outline-success btns float-end" data-bs-toggle="modal" data-bs-target="#exampleModal4">Here</button>
+  </div>  
 <br>
 <div class="container container-xl">
 <app-sidebar2></app-sidebar2>
@@ -26,3 +30,21 @@
 <p>HTML also allows you to include links, create tables, forms, lists, apply styles through CSS, and embed multimedia elements, among many other features. It provides a structure for organizing content and enables the web browser to interpret and display the page appropriately.</p>
 <p>It's worth noting that HTML is often used in conjunction with other technologies like CSS (Cascading Style Sheets) for styling and JavaScript for dynamic interactivity. Together, these technologies form the core building blocks of modern web development.</p>
 </div>
+
+<div class="modal fade dss" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Which method do you want to choose</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form style="text-align: center;" class="tada">
+            <button type="button" class="btn btn-primary dd" routerLink="/carousel" style="margin-right: 3%;" data-bs-dismiss="modal">Video</button>
+            <button type="button" class="btn btn-primary" routerLink="/gallery" data-bs-dismiss="modal">Gallery</button>
+            <hr class="hr">
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>

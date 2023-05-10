@@ -1,24 +1,22 @@
-img{
-    border-radius: 10px;
-}
-.container{
+
+  .container{
     padding: 30px;
     border-radius: 30px;
-    opacity: 0.8;
     background-color: white;
     height: 900px;
-}
-div{
-    color: black;
-}
-img{
-    height: 200px;
-}
-.btn{
-    width: 200px;
-}
-.des{
-    width: 500px;
+  }
+.const{
+    border-radius: 30px;
+    padding: 30px;
+    background-color: whitesmoke;
     position: relative;
-    margin: auto;
+    top: 5%;
+    height: 300px;
+    opacity: 5px;
+}
+.const2{
+    border-radius: 30px;
+    padding: 30px;
+    background-color: whitesmoke;
+    height: 500px;
 }

@@ -1,4 +1,26 @@
 <br>
+<div class="alert alert-info">
+    <strong>Info!</strong> If you prefer to learn by other means please click the here button
+    <button type="button" class="btn btn-outline-success btns float-end" data-bs-toggle="modal" data-bs-target="#exampleModal5">Here</button>
+  </div>  
 <div class="container container-xl">
 <app-sidebar></app-sidebar>
 </div>
+
+<div class="modal fade dss" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Which method do you want to choose</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form style="text-align: center;" class="tada">
+            <button type="button" class="btn btn-primary dd" routerLink="/carousel" style="margin-right: 3%;" data-bs-dismiss="modal">Video</button>
+            <button type="button" class="btn btn-primary" routerLink="/gallery" data-bs-dismiss="modal">Gallery</button>
+            <hr class="hr">
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
