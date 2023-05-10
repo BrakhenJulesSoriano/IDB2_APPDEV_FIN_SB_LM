@@ -12,21 +12,30 @@ import { LoginComponent } from './login/login.component';
 import { ManageComponent } from './manage/manage.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { AboutComponent } from './about/about.component';
+import { Sidebar2Component } from './sidebar2/sidebar2.component';
+import { HtmlbasicsComponent } from './tutorials/html/htmlbasics/htmlbasics.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'registration', component: RegistrationComponent},
+  {path: 'navbar', component: NavbarComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'about', component: AboutComponent},
+
   {path: 'home', component: HomeComponent},
   {path: 'carousel', component: CarouselComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'pricing', component: PricingComponent},
+  {path: 'manage', component: ManageComponent},
+
+  //css routes
   {path: 'sidebar', component: SidebarComponent},
   {path: 'css', component: CssComponent},
+
+  // html routes
+  {path: 'sidebar2', component: Sidebar2Component},
   {path: 'html', component: HtmlComponent},
-  {path: 'navbar', component: NavbarComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'registration', component: RegistrationComponent},
-  {path: 'manage', component: ManageComponent},
-  {path: 'about', component: AboutComponent},
+  {path: 'basics', component: HtmlbasicsComponent},
 ];
 
 @NgModule({
