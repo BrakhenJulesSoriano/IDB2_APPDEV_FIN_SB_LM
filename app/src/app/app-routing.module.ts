@@ -1,19 +1,25 @@
 import { NgModule, ViewChild } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PricingComponent } from './pricing/pricing.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { CssComponent } from './tutorials/css/css.component';
-import { HtmlComponent } from './tutorials/html/html.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { ManageComponent } from './manage/manage.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { AboutComponent } from './about/about.component';
+
+//CSS
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { CssComponent } from './tutorials/css/css.component';
+
+//HTML
 import { Sidebar2Component } from './sidebar2/sidebar2.component';
+import { HtmlComponent } from './tutorials/html/html.component';
 import { HtmlbasicsComponent } from './tutorials/html/htmlbasics/htmlbasics.component';
+import { HtmlstylesComponent } from './tutorials/html/htmlstyles/htmlstyles.component';
+import { HtmltableComponent } from './tutorials/html/htmltable/htmltable.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -36,6 +42,8 @@ const routes: Routes = [
   {path: 'sidebar2', component: Sidebar2Component},
   {path: 'html', component: HtmlComponent},
   {path: 'basics', component: HtmlbasicsComponent},
+  {path: 'styles', component: HtmlstylesComponent},
+  {path: 'table', component: HtmltableComponent},
 ];
 
 @NgModule({

@@ -11,8 +11,9 @@ div{
 table{
     color: black;
 }
-h1{
+.h1{
     text-align: center;
+    color: black;
 }
 textarea{
     height: 300px;

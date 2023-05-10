@@ -22,6 +22,8 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { Sidebar2Component } from './sidebar2/sidebar2.component';
 import { HtmlbasicsComponent } from './tutorials/html/htmlbasics/htmlbasics.component';
+import { HtmlstylesComponent } from './tutorials/html/htmlstyles/htmlstyles.component';
+import { HtmltableComponent } from './tutorials/html/htmltable/htmltable.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { HtmlbasicsComponent } from './tutorials/html/htmlbasics/htmlbasics.comp
     ManageComponent,
     Sidebar2Component,
     HtmlbasicsComponent,
+    HtmlstylesComponent,
+    HtmltableComponent,
   ],
   imports: [
     BrowserModule,

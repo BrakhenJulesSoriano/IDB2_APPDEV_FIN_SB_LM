@@ -20,3 +20,14 @@
     background-color: whitesmoke;
     height: 500px;
 }
+h1{
+  color: black;
+}
+div{
+  color: black;
+}
+img{
+  height: 300px;
+  width: 500px;
+  border-radius: 30px;
+}

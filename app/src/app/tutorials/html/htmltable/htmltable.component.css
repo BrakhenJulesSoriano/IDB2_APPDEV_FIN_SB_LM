@@ -8,16 +8,15 @@
 div{
     color: black;
 }
-h1{
-    position: relative;
-    font-size: 50px;
-    color: #ffffff; 
-    opacity: 1;
-  }
-  .hr{
-    color: white;
-  }
-  .h1{
+table{
     color: black;
+}
+h1{
     text-align: center;
-  }
+}
+textarea{
+    height: 300px;
+    width: 500px;
+    border: solid;
+    padding: 20px;
+}
