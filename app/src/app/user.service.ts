@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable,OnInit } from "@angular/core";
 import { HttpClient,HttpHeaders } from "@angular/common/http";
 import { catchError,map,tap } from "rxjs/operators";
 //import { MessageService } from "./messaging.service";
@@ -9,7 +9,7 @@ import { USER } from "./user-list";
 @Injectable({
     providedIn: 'root'
   })
-export class UserService{
+export class UserService implements OnInit{
     private usersURL = 'api/users'; //url to web api
 
     httpOptions = {
@@ -59,11 +59,33 @@ export class UserService{
         );
     }
     /** POST: add new user to the server */
+    
     addUser(user: User): Observable<User> {
         return this.http.post<User>(this.usersURL, user, this.httpOptions)
         .pipe(
             tap((newUser: User) => this.log(`Added new user with id = ${newUser.id}`)),
         catchError(this.handleError<User>(`addUser`))
         )
+    }
+    
+    updateUser (user: User): Observable<any> {
+        return this.http.put(this.usersURL, user, this.httpOptions)
+        .pipe(
+            tap(_ => this.log
+                (`Updated a user detail with id = $(user.id)`)),
+        );
+      }
+    deleteUser(user: User | number){
+        const id = typeof user === 'number' ? user : user.id;
+        const url = `${this.usersURL}/${id}`;
+
+        return this.http.delete<User>(url, this.httpOptions)
+        .pipe(
+            tap(_ => this.log('user deleted with id = ${id}')),
+            catchError(this.handleError<User>('deleteUser'))
+        );
+    }
+    ngOnInit() {
+        this.getUsers();
     }
 }

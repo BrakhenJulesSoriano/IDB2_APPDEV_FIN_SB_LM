@@ -40,10 +40,8 @@
            <td>
           <!-- Button trigger -->
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" [class.selected]="user === selectedUser" data-bs-toggle="modal" (click)="onSelect(user)" data-bs-target="#exampleModal1">
-    View
-  </button>
-<button type="button" class="btn btn-danger">Delete</button>
+<button type="button" class="btn btn-primary" [class.selected]="user === selectedUser" data-bs-toggle="modal" (click)="onSelect(user)" data-bs-target="#exampleModal1">View</button>
+<button type="button" class="btn btn-danger" (click)="delete(user)">Delete</button>
   
   <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
     <div class="modal-dialog">
@@ -102,7 +100,7 @@
                   </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary" (click)="save()">Save changes</button>
         </div>
       </div>
     </div>
