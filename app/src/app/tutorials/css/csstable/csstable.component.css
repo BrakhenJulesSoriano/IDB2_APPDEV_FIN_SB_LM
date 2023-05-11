@@ -1,0 +1,22 @@
+.container{
+    padding: 30px;
+    border-radius: 30px;
+    opacity: 0.8;
+    background-color: white;
+    height: 1000px;
+}
+div{
+    color: black;
+}
+table{
+    color: black;
+}
+h1{
+    text-align: center;
+}
+textarea{
+    height: 300px;
+    width: 500px;
+    border: solid;
+    padding: 20px;
+}

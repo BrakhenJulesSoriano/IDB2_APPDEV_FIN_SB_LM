@@ -24,6 +24,9 @@ import { Sidebar2Component } from './sidebar2/sidebar2.component';
 import { HtmlbasicsComponent } from './tutorials/html/htmlbasics/htmlbasics.component';
 import { HtmlstylesComponent } from './tutorials/html/htmlstyles/htmlstyles.component';
 import { HtmltableComponent } from './tutorials/html/htmltable/htmltable.component';
+import { CssbasicsComponent } from './tutorials/css/cssbasics/cssbasics.component';
+import { CssbackgroundComponent } from './tutorials/css/cssbackground/cssbackground.component';
+import { CsstableComponent } from './tutorials/css/csstable/csstable.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +47,9 @@ import { HtmltableComponent } from './tutorials/html/htmltable/htmltable.compone
     HtmlbasicsComponent,
     HtmlstylesComponent,
     HtmltableComponent,
+    CssbasicsComponent,
+    CssbackgroundComponent,
+    CsstableComponent,
   ],
   imports: [
     BrowserModule,

@@ -14,21 +14,34 @@
           <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
             <li class="nav-item">     
             <hr>
-              <a class="nav-link" href="#">Lesson1</a>
+              <a class="nav-link" routerLink="/css">Introduction</a>
               <hr>
             </li>
             <li class="nav-item">          
-                <a class="nav-link" href="#">Lesson2</a>
+                <a class="nav-link" routerLink="/cssbasics">CSS Basics</a>
                 <hr>
             </li>
             <li class="nav-item">          
-                <a class="nav-link" href="#">Lesson3</a>
+                <a class="nav-link" routerLink="/cssbackground">CSS Background</a>
                 <hr>
             </li>  
             <li class="nav-item">          
-                <a class="nav-link" href="#">Lesson4</a>
+                <a class="nav-link" routerLink="/csstable">CSS Table</a>
                 <hr>
             </li>
+            <div class="dropdown bg-dark">
+              <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                References
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/css">Introduction</a></li>
+                <li><a class="dropdown-item" routerLink="/cssbasics">Basics</a></li>
+                <li><a class="dropdown-item" routerLink="/cssbackground">Backgournd</a></li>
+                <li><a class="dropdown-item" routerLink="/csstable">Tables</a></li>
+                <li><a class="dropdown-item" routerLink="/carousel">Videos</a></li>
+                <li><a class="dropdown-item" routerLink="/gallery">Gallery</a></li>
+              </ul>
+            </div>            
           </ul>
         </div>
       </div>

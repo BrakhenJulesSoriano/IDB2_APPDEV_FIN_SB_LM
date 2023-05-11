@@ -13,6 +13,9 @@ import { AboutComponent } from './about/about.component';
 //CSS
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CssComponent } from './tutorials/css/css.component';
+import { CssbasicsComponent } from './tutorials/css/cssbasics/cssbasics.component';
+import { CssbackgroundComponent } from './tutorials/css/cssbackground/cssbackground.component';
+import { CsstableComponent } from './tutorials/css/csstable/csstable.component';
 
 //HTML
 import { Sidebar2Component } from './sidebar2/sidebar2.component';
@@ -37,6 +40,9 @@ const routes: Routes = [
   //css routes
   {path: 'sidebar', component: SidebarComponent},
   {path: 'css', component: CssComponent},
+  {path: 'cssbasics', component: CssbasicsComponent},
+  {path: 'csstable', component: CsstableComponent},
+  {path: 'cssbackground', component: CssbackgroundComponent},
 
   // html routes
   {path: 'sidebar2', component: Sidebar2Component},
