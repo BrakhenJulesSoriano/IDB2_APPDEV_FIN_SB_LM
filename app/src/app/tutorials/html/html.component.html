@@ -1,50 +1,183 @@
-<div class="alert alert-info">
-    <strong>Info!</strong> If you prefer to learn by other means please click the here button
-    <button type="button" class="btn btn-outline-success btns float-end" data-bs-toggle="modal" data-bs-target="#exampleModal4">Here</button>
-  </div>  
+<!--Container-->
 <br>
-<div class="container container-xl">
-<app-sidebar2></app-sidebar2>
-<h1 class="h1">What is HTML?</h1>
-<p>HTML, short for HyperText Markup Language, is a standard markup language used for creating the structure and presenting the content of web pages. It is the foundation of the World Wide Web and is widely supported by web browsers, making it the primary language for designing and formatting web documents.</p>
-<p>HTML uses a set of tags and attributes to define the elements within a web page. Tags are enclosed in angle brackets (<>) and usually come in pairs, consisting of an opening tag and a closing tag. The opening tag denotes the start of an element, while the closing tag indicates its end. Some tags, called empty tags, don't require a closing tag.</p>    
-<p>Here's a basic HTML structure example:</p>
-
-<!-- textarea -->
-<div class="">
-    <textarea type="text" id="textA">
-        <!DOCTYPE html>
-        <html>
-        <body>
-        
-        <h1>My First Heading</h1>
-        
-        <p>My first paragraph.</p>
-        
-        </body>
-        </html>
-    </textarea>
-        <div id="copyToClipboard-a" class="clipboard icon"></div>
-</div>
-<p>In this example, we have an HTML document enclosed in the html tags. The head section contains meta-information about the document, such as the title displayed in the browser's title bar. The actual content of the page is placed within the body tags. The example includes a heading (h1), and a paragraph (p).</p> 
-<p>HTML also allows you to include links, create tables, forms, lists, apply styles through CSS, and embed multimedia elements, among many other features. It provides a structure for organizing content and enables the web browser to interpret and display the page appropriately.</p>
-<p>It's worth noting that HTML is often used in conjunction with other technologies like CSS (Cascading Style Sheets) for styling and JavaScript for dynamic interactivity. Together, these technologies form the core building blocks of modern web development.</p>
-</div>
-
-<div class="modal fade dss" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Which method do you want to choose</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="container-lg brd">
+    <div class="container text-center">
+        <h1>HTML Coding 101 Tutorial For Dummies</h1>
+        <br>
+        <img src="assets/cdd.jpg" class="pic">
+        <br>
+        <br>
+        <div class="Intro">
+          <p style="font-size: large;">
+            Welcome to our HTML tutorial! HTML, or Hypertext Markup Language, is the standard
+             markup language used to create web pages. HTML provides the structure and content 
+             of a website, defining the various elements on a page and their relationships to each other.
+            In this tutorial, we'll cover the basics of HTML, including its syntax, commonly 
+            used tags, and best practices for structuring a webpage. By the end of this tutorial, 
+            you'll have a solid understanding of how HTML works and be ready to start creating your own web pages from scratch.
+            So, whether you're a beginner just starting out with web development or an experienced 
+            programmer looking to refresh your skills, let's dive into the world of HTML!
+          </p>
         </div>
-        <div class="modal-body">
-          <form style="text-align: center;" class="tada">
-            <button type="button" class="btn btn-primary dd" routerLink="/carousel" style="margin-right: 3%;" data-bs-dismiss="modal">Video</button>
-            <button type="button" class="btn btn-primary" routerLink="/gallery" data-bs-dismiss="modal">Gallery</button>
-            <hr class="hr">
-        </form>
+        <br>
+        <br>
+        <div class="Body">
+          <h1>Basic HTML Structure</h1>
+          <p style="font-size: large;">
+            The basic structure of an HTML document consists of several components that work 
+            together to create a web page. These components include the doctype declaration, 
+            HTML tags, head section, and body section.
+            <br>
+            <br>
+            Here is an example of a basic HTML structure:
+            <img src="assets/Structure/1s.JPG">
+            <br>
+            <br>
+            In this example, the "!doctype html" declaration informs the web browser that 
+            this is an HTML5 document. The opening "html" tag indicates the start of the HTML 
+            document, and the closing "html" tag indicates the end of the document.
+            The head section of the HTML document contains information about the web page, 
+            uch as the title, author, and metadata. In the example above, the title of the 
+            web page is "Page Title", which is displayed in the title bar of the web browser.
+            The body section of the HTML document contains the content of the web page. 
+            In this example, there is a heading "h1" and a paragraph "p". The heading 
+            and paragraph tags indicate the type of content being displayed and provide 
+            structure to the page.
+            Overall, this basic HTML structure provides a framework for creating a web 
+            page and allows developers to add additional content and formatting to create a 
+            fully functional website.
+          </p>
+          <br>
+          <br>
+          <h1>HTML Elements</h1>
+          <p style="font-size: large;">
+            HTML Elements are the building blocks of an HTML document. They are used to define the 
+            structure and content of a web page. Here are some common HTML elements with examples:
+            <br>
+            <br>
+            1. Headings: Headings are used to define the headings or titles of a web page. 
+            There are six levels of headings, with H1 being the highest level and H6 being the 
+            lowest. For example:
+            <br>
+            <br>
+            <img src="assets/Structure/1e.JPG">
+
+            <br>
+            <br>
+            2. Paragraphs: Paragraphs are used to group text content together. For example:
+            <br>
+            <br>
+            <img src="assets/Structure/2e.JPG">
+
+            <br>
+            <br>
+            3. Links: Links are used to link to other web pages or resources. For example:
+            <br>
+            <br>
+            <img src="assets/Structure/3e.JPG">
+
+            <br>
+            <br>
+            4. Images: Images are used to display images on a web page. For example:
+            <br>
+            <br>
+            <img src="assets/Structure/4e.JPG">
+
+            <br>
+            <br>
+            5. Lists: Lists are used to group related items together. 
+            There are two types of lists: ordered and unordered. For example:
+            <br>
+            <br>
+            <img src="assets/Structure/5e.JPG">
+
+            <br>
+            <br>
+            6. Forms: Forms are used to collect user input. For example:
+            <br>
+            <br>
+            <img src="assets/Structure/6e.JPG">
+
+            <br>
+            <br>
+            7. Divisions: Divisions are used to group related elements together 
+            and apply styles to them. For example:
+            <br>
+            <br>
+            <img src="assets/Structure/7e.JPG">
+
+            <br>
+            <br>
+        </p>
+        <br>
+        <h1>HTML Attributes</h1>
+        <p style="font-size: large;">
+          HTML attributes provide additional information about an HTML element. They are 
+          added to the opening tag of the element and consist of a name and a value, separated 
+          by an equals sign. Here are some examples of HTML attributes:
+          <br>
+          <br>
+          1.The "src" attribute in an "img" tag specifies the source file for the image:
+          <br>
+          <br>
+          <img src="assets/Structure/1a.JPG">
+          <br>
+          <br>
+          In this example, "example.jpg" is the source file for the image and 
+          "An example image" is the alternative text that will be displayed if the image 
+          cannot be loaded.
+          <br>
+          <br>
+          2.The "href" attribute in an "a" tag specifies the URL that the link should point to:
+          <br>
+          <br>
+          <img src="assets/Structure/2a.JPG">
+          <br>
+          <br>
+          In this example, "https://www.example.com/" is the URL that the link should point 
+          to, and "Visit our website" is the text that will be displayed as the link.
+          <br>
+          <br>
+          3.The "class" attribute can be used to group HTML elements together for styling purposes:
+          <br>
+          <br>
+          <img src="assets/Structure/3a.JPG">
+          <br>
+          <br>
+          In this example, "highlight" is the class name, and any elements with the class 
+          "highlight" will have the specified styles applied to them.
+          <br>
+          <br>
+          4.The "id" attribute can be used to uniquely identify an HTML element:
+          <br>
+          <br>
+          <img src="assets/Structure/4a.JPG">
+          <br>
+          <br>
+          In this example, "main-content" is the ID of the "div" element, and it can be targeted with CSS or JavaScript using the ID selector "#main-content".
+          <br>
+          <br>
+          5.The "style" attribute can be used to apply inline styles to an HTML element:
+          <br>
+          <br>
+          <img src="assets/Structure/5a.JPG">
+          <img src="assets/Structure/6a.JPG">
+          <br>
+          <br>
+          In this example, the "style" attribute is used to apply the styles directly to the
+           "p" element, without the need for an external stylesheet.
+           These are just a few examples of the many HTML attributes that are available. 
+           They can be used to add additional functionality and style to HTML elements in a 
+           variety of ways.
+          <br>
+          <br>
+        </p>
+        <br>
         </div>
-      </div>
+        <p style="font-size: large;">If you dont prefer reading this article and stuff you can i either click both of these buttons
+          from my left or right if you prefer to learn by images or video.
+        </p>
+        <button type="button" class="btn btn-outline-primary float-start" routerLink="/gallery">Images</button>
+        <button type="button" class="btn btn-outline-primary float-end" routerLink="/carousel">Videos</button>
     </div>
   </div>

@@ -1,38 +1,171 @@
-<div class="alert alert-info">
-    <strong>Info!</strong> If you prefer to learn by other means please click the here button
-    <button type="button" class="btn btn-outline-success btns float-end" data-bs-toggle="modal" data-bs-target="#exampleModal5">Here</button>
-  </div>  
-<div class="container container-xl">
-<app-sidebar></app-sidebar>
-<h1 class="h1">CSS Introduction</h1>
-<p>CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation and appearance of a document written in HTML (Hypertext Markup Language). It provides a way to control the layout, formatting, colors, and other visual aspects of a web page, allowing web developers to separate the content of a page from its presentation.</p>
-<p>CSS works by selecting HTML elements and applying styles to them. It uses a set of rules to define how elements should be styled. These rules consist of selectors and declarations. The selector specifies which elements the rule applies to, and the declaration contains one or more property-value pairs that define the specific styles to be applied.</p>
-<p>Here's an example of a CSS rule:</p>
-<!-- textarea -->
-<textarea>
-  h1 {
-    color: blue;
-    font-size: 24px;
-  }
-</textarea>  
-<!-- textarea -->
-<p>In this example, h1 is the selector, which targets all the h1 elements in the HTML document. The declarations within the curly braces define the styles to be applied. In this case, the text color will be blue, and the font size will be 24 pixels.</p>
-<p>CSS is a powerful tool for web developers, enabling them to create visually appealing and consistent web pages by separating the content from the presentation.</p>
-</div>
-<div class="modal fade dss" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Which method do you want to choose</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<!--Container-->
+<br>
+<div class="container-lg brd">
+    <div class="container text-center">
+        <h1>CSS Coding 101 Tutorial For Dummies</h1>
+        <br>
+        <img src="assets/cdd.jpg" class="pic">
+        <br>
+        <br>
+        <div class="Intro">
+          <p style="font-size: large;">
+            Welcome to our CSS tutorial page! CSS (Cascading Style Sheets) is a style sheet 
+            language used for describing the presentation of a document written in HTML or XML.
+             With CSS, you can control the layout, colors, fonts, and other visual aspects of y
+             our website. Whether you're a beginner or an experienced web developer, this tutorial is designed to help you learn CSS step-by-step.
+            In this tutorial, we'll cover everything you need to know to get started with CSS. 
+            We'll start with the basics, including how to include CSS in your HTML documents, 
+            and then move on to more advanced topics like CSS selectors, box model, and 
+            responsive design. By the end of this tutorial, you'll have a solid foundation 
+            in CSS and be able to create beautiful, professional-looking websites.
+            <br>So, let's dive in and get started with CSS!</p>
         </div>
-        <div class="modal-body">
-          <form style="text-align: center;" class="tada">
-            <button type="button" class="btn btn-primary dd" routerLink="/carousel" style="margin-right: 3%;" data-bs-dismiss="modal">Video</button>
-            <button type="button" class="btn btn-primary" routerLink="/gallery" data-bs-dismiss="modal">Gallery</button>
-            <hr class="hr">
-        </form>
+        <br>
+        <br>
+        <div class="Body">
+          <h1>Basic CSS</h1>
+          <p style="font-size: large;">
+            The syntax of CSS (Cascading Style Sheets) is a set of rules that dictate 
+            how to write CSS code. CSS code is used to add style, formatting, and layout to 
+            HTML documents. CSS has a specific syntax that needs to be followed for it to work 
+            correctly.
+            <br>
+            The syntax of CSS is composed of two main parts: the selector and the declaration 
+            block. The selector specifies which HTML elements the CSS code will target. 
+            The declaration block contains one or more declarations, each consisting of a 
+            property and its corresponding value, separated by a colon. The declaration block 
+            is enclosed in curly braces example:
+            <br>
+  
+            <br>
+            For example, to change the background color of a web page, you would use the 
+            following CSS code:
+            <br>
+            <br>
+          </p>
+          <img src="assets/Selector.JPG">
+          <img srcset="assets/BackgCo.JPG">
+          <br>
+          <br>
+          <p style="font-size: large;">
+            Here, body is the selector that targets the body element of the HTML document. 
+            The declaration block contains a single declaration: background-color is the 
+            property, and #f2f2f2 is its corresponding value. The #f2f2f2 value is a 
+            hexadecimal color code that represents a light gray color.
+            It is essential to write CSS code with proper syntax to avoid errors and ensure that the 
+            styles are applied correctly. Incorrect syntax can result in 
+            the styles not being applied, or even breaking the layout of the web page.
+            Another critical aspect of CSS is how to link a CSS file to an HTML document. 
+            This is done using the link tag in the head section of the HTML document. The link
+            tag specifies the path to the CSS file using the href attribute, and the rel attribute 
+            specifies the relationship between the HTML document and the CSS file.
+            Selectors and declarations are essential parts of CSS. Selectors determine which
+             elements the styles will be applied to, while declarations contain the properties 
+             and values that define the styles. There are various types of selectors, including 
+             element selectors, class selectors, and ID selectors.
+             Applying styles to HTML elements is straightforward with CSS. 
+             By using selectors and declarations, you can style HTML elements 
+             in various ways. For example, you can change the font size, color, background, 
+             and borders of an element using CSS.
+             Examples of basic CSS styling include changing the font size, color, and 
+             background of text. For instance, you can change the font size of a paragraph 
+             using the font-size property:
+             <br>
+             <br>
+             <img src="assets/fontS.JPG">
+             <br>
+             Here, p is the selector that targets all p 
+             elements in the HTML document. The font-size property sets the font size to 16 pixels.
+             <br>
+             In summary, understanding the syntax of CSS, how to link CSS files to HTML documents, 
+             selectors and declarations, and applying styles to HTML elements are crucial for 
+             creating visually appealing and well-structured web pages.
+          </p>
+          <br>
+          <br>
+          <h1>How to link a CSS file to an HTML document</h1>
+          <p style="font-size: large;">To link a CSS file to an HTML document, you use the link element in the 
+          head section of the HTML document. For example:
+          <br>
+          <img src="assets/stylelink.JPG">
+          <br>
+          This code links to a file named styles.css located in the same directory as the HTML file.
+        </p>
+        <br>
+        <h1>Selectors and declarations</h1>
+        <p style="font-size: large;">
+          In CSS, selectors are used to target specific HTML elements, while declarations 
+          define the styles to be applied to those elements. Selectors can be based on the 
+          element name, class, or ID, as well as various attributes. For example, the selector 
+          "h1" targets all 'h1' elements in the HTML document, while ".my-class" targets all 
+          elements with a class of "my-class". Similarly, "#my-id" targets an element with the 
+          ID "my-id".
+
+          Once a selector is defined, declarations are used to specify the styles to be applied to the 
+          targeted elements. Declarations consist of a property and a value separated by a colon, and 
+          are enclosed in curly braces as a block. For example, the declaration "color: red;" sets the 
+          text color of the selected element to red, while "font-size: 24px;" sets the font size to 
+          24 pixels example:
+          <br>
+          <img src="assets/selH1.JPG">
+        </p>
+        <br>
+        <p style="font-size: large;">
+          Selectors and declarations can also be combined to target specific elements and apply 
+          styles to them. For example, the selector "h1.my-class" targets all "h1" elements with a 
+            class of "my-class", while the declaration block enclosed in curly braces sets the font 
+            size to 24 pixels and the text color to red.
+            Overall, selectors and declarations are essential to CSS as they allow designers 
+            to create specific styles for different HTML elements, making the appearance of 
+            the website more visually appealing and enhancing the user experience.
+        </p>
+        <br>
+        <h1>Applying styles to HTML elements</h1>
+        <br>
+        <p style="font-size: large;">Applying styles to HTML elements is a fundamental concept in CSS. CSS 
+          allows designers and developers to change the appearance of HTML elements 
+          by applying styles to them. This is done by targeting specific elements using 
+          CSS selectors and defining the styles to be applied using CSS declarations.
+          In the example provided, a paragraph element is being targeted with a class 
+          attribute of "highlighted". The CSS declaration block contains the background-color 
+          property, which is set to yellow. When the CSS file is linked to the HTML document, 
+          the paragraph element with the "highlighted" class will have a yellow background color a
+          pplied to it.
+          <br>
+          <img src="assets/ApplySCH.JPG">
+          <br>
+          CSS selectors can be used to target HTML elements in a variety of ways, 
+          such as by element type, class, ID, or attribute. CSS declarations can also include 
+          multiple properties and values, allowing for more complex styling options. 
+          Additionally, CSS allows for the use of inheritance and cascading, which can further 
+          simplify and streamline the styling process.
+        </p>
+        <br>
+        <h1>Examples</h1>
+        <p style="font-size: large;">
+          In addition to the basic CSS styling examples given, there are many other properties and 
+          values that can be used to create more complex and dynamic styles. For example, the "border" 
+          property can be used to add borders around HTML elements, with various styles and thicknesses. 
+          The "text-align" property can be used to align text within an element, such as centering or 
+          justifying it. The "padding" and "margin" properties can be used to adjust the spacing around 
+          elements, either inside or outside of the element's borders.
+          In addition to these individual properties, CSS also supports shorthand properties that 
+          can be used to define multiple styles at once. For example, the "font" shorthand property 
+          can be used to define the font family, size, weight, style, and line height all at once. 
+          Similarly, the "background" shorthand property can be used to define the background color, 
+          image, repeat behavior, and position all at once. 
+          <br>Example:
+          <br>
+          <img src="assets/Lastcss.JPG"><br>
+          By using these various CSS properties and values, web designers can create visually 
+          appealing and engaging websites that are both functional and aesthetically pleasing.
+        </p>
         </div>
-      </div>
+        <p style="font-size: large;">If you dont prefer reading this article and stuff you can i either click both of these buttons
+          from my left or right if you prefer to learn by images or video.
+        </p>
+        <button type="button" class="btn btn-outline-primary float-start" routerLink="/gallery">Images</button>
+        <button type="button" class="btn btn-outline-primary float-end" routerLink="/carousel">Videos</button>
+
     </div>
   </div>
