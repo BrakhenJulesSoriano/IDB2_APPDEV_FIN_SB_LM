@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { ManageComponent } from './manage/manage.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { AboutComponent } from './about/about.component';
+import { ViewComponent } from './manage/view/view.component';
 
 //CSS
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -36,6 +37,8 @@ const routes: Routes = [
   {path: 'gallery', component: GalleryComponent},
   {path: 'pricing', component: PricingComponent},
   {path: 'manage', component: ManageComponent},
+  {path: 'view/:id', component: ViewComponent},
+  
 
   //css routes
   {path: 'sidebar', component: SidebarComponent},

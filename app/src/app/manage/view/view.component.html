@@ -1,0 +1,49 @@
+<br>
+<div class="container container-lg">
+    <h1>Update User</h1>
+    <div class="" *ngIf="user">
+        <div class="col-12">
+          <label class="form-label col-form-label-lg">ID Number</label>
+          <input type="number" class="form-control form-control" araia-label="Default" value="{{user.id}}" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+          <div class="col-12">
+            <label class="form-label col-form-label-lg">First Name</label>
+            <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="user.fname" aria-describedby="inputGroup-sizing-default" placeholder="First Name">
+          </div>
+
+          <div class="col-12">
+            <label class="form-label col-form-label-lg">Last Name</label>
+            <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="user.lname" aria-describedby="inputGroup-sizing-default" placeholder="Last Name">
+          </div>
+
+          <div class="col-12">
+              <label class="form-label col-form-label-lg">User Name</label>
+              <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="user.uname" aria-describedby="inputGroup-sizing-default" placeholder="User Name">
+            </div>
+            
+            <div class="col-12">
+              <label class="form-label col-form-label-lg">Password</label>
+              <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="user.password" aria-describedby="inputGroup-sizing-default" placeholder="Password">
+            </div>
+            
+            <div class="col-12">
+              <label class="form-label col-form-label-lg">Email</label>
+              <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="user.email" aria-describedby="inputGroup-sizing-default" placeholder="Example@gmail.com">
+            </div>
+            
+            <div class="col-12">
+              <label class="form-label col-form-label-lg">Country</label>
+              <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="user.country" aria-describedby="inputGroup-sizing-default" placeholder="Country">
+            </div> 
+            
+            <div class="col-12">
+              <label class="form-label col-form-label-lg">City</label>
+              <input type="text" class="form-control form-control" araia-label="Default" [(ngModel)]="user.city" aria-describedby="inputGroup-sizing-default" placeholder="City">
+            </div>  
+    <br>
+    <button type="button" class="btn btn-info" (click)="goBack()">Close</button>
+    <button type="button" class="btn btn-primary" (click)="save()">Save changes</button>                           
+        </div>
+    
+</div>

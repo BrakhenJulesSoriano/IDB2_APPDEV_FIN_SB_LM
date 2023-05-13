@@ -1,0 +1,34 @@
+.container{
+    padding: 30px;
+    border-radius: 30px;
+    opacity: 0.8;
+    background-color: white;
+    height: 1200px;
+    max-width: 1000px;
+}
+div{
+    color: black;
+}
+h1{
+    text-align: center;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+  }
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+}

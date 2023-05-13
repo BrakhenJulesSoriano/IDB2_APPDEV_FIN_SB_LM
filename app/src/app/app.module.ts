@@ -27,6 +27,7 @@ import { HtmltableComponent } from './tutorials/html/htmltable/htmltable.compone
 import { CssbasicsComponent } from './tutorials/css/cssbasics/cssbasics.component';
 import { CssbackgroundComponent } from './tutorials/css/cssbackground/cssbackground.component';
 import { CsstableComponent } from './tutorials/css/csstable/csstable.component';
+import { ViewComponent } from './manage/view/view.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { CsstableComponent } from './tutorials/css/csstable/csstable.component';
     CssbasicsComponent,
     CssbackgroundComponent,
     CsstableComponent,
+    ViewComponent,
   ],
   imports: [
     BrowserModule,
