@@ -8,11 +8,11 @@ import { User } from './User';
 export class InMemoryDataService implements InMemoryDbService{
   createDb() {
     const users = [
-    {
+      {
         id: 1,
-        fname: 'Clothes',
-        lname: 'Me',
-        uname: 'The Clothes',
+        fname: 'Brakhen Jules',
+        lname: 'Soriano',
+        uname: 'Brakhen Jules Soriano',
         password: '12345678',
         email: 'example@gmail.com',
         country: 'Philippines',
@@ -20,9 +20,9 @@ export class InMemoryDataService implements InMemoryDbService{
     },
     {
         id: 2,
-        fname: 'Clothes',
-        lname: 'Me',
-        uname: 'The Clothes',
+        fname: 'Bailu',
+        lname: 'Bronya',
+        uname: 'Bailu Bronya',
         password: '12345678',
         email: 'example@gmail.com',
         country: 'Philippines',
@@ -30,9 +30,9 @@ export class InMemoryDataService implements InMemoryDbService{
     },
     {
         id: 3,
-        fname: 'Clothes',
-        lname: 'Me',
-        uname: 'The Clothes',
+        fname: 'Clara',
+        lname: 'Hemiko',
+        uname: 'Clara Hemiko',
         password: '12345678',
         email: 'example@gmail.com',
         country: 'Philippines',
@@ -40,9 +40,9 @@ export class InMemoryDataService implements InMemoryDbService{
     },
     {
         id: 4,
-        fname: 'Clothes',
-        lname: 'Me',
-        uname: 'The Clothes',
+        fname: 'Fu',
+        lname: 'Xuan',
+        uname: 'Fu Xuan',
         password: '12345678',
         email: 'example@gmail.com',
         country: 'Philippines',
@@ -50,9 +50,9 @@ export class InMemoryDataService implements InMemoryDbService{
     },
     {
         id: 5,
-        fname: 'Clothes',
-        lname: 'Me',
-        uname: 'The Clothes',
+        fname: 'Herta',
+        lname: 'Hook',
+        uname: 'Herta Hook',
         password: '12345678',
         email: 'example@gmail.com',
         country: 'Philippines',
