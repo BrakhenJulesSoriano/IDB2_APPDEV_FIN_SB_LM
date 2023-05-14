@@ -8,6 +8,8 @@ import { UserService } from '../user.service';
   styleUrls: ['./manage.component.css']
 })
 export class ManageComponent implements OnInit{
+  title='Log';
+
   constructor(
     private userService: UserService, //userService
     ) {}
