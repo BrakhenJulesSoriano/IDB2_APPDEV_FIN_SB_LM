@@ -11,19 +11,10 @@ import { RegistrationComponent } from './registration/registration.component';
 import { AboutComponent } from './about/about.component';
 import { ViewComponent } from './manage/view/view.component';
 
-//CSS
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CssComponent } from './tutorials/css/css.component';
-import { CssbasicsComponent } from './tutorials/css/cssbasics/cssbasics.component';
-import { CssbackgroundComponent } from './tutorials/css/cssbackground/cssbackground.component';
-import { CsstableComponent } from './tutorials/css/csstable/csstable.component';
 
-//HTML
-import { Sidebar2Component } from './sidebar2/sidebar2.component';
 import { HtmlComponent } from './tutorials/html/html.component';
-import { HtmlbasicsComponent } from './tutorials/html/htmlbasics/htmlbasics.component';
-import { HtmlstylesComponent } from './tutorials/html/htmlstyles/htmlstyles.component';
-import { HtmltableComponent } from './tutorials/html/htmltable/htmltable.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -39,20 +30,9 @@ const routes: Routes = [
   {path: 'manage', component: ManageComponent},
   {path: 'view/:id', component: ViewComponent},
   
-
-  //css routes
   {path: 'sidebar', component: SidebarComponent},
   {path: 'css', component: CssComponent},
-  {path: 'cssbasics', component: CssbasicsComponent},
-  {path: 'csstable', component: CsstableComponent},
-  {path: 'cssbackground', component: CssbackgroundComponent},
-
-  // html routes
-  {path: 'sidebar2', component: Sidebar2Component},
   {path: 'html', component: HtmlComponent},
-  {path: 'basics', component: HtmlbasicsComponent},
-  {path: 'styles', component: HtmlstylesComponent},
-  {path: 'table', component: HtmltableComponent},
 ];
 
 @NgModule({

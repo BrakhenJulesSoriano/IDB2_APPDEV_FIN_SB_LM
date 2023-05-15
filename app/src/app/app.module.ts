@@ -20,15 +20,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
-import { Sidebar2Component } from './sidebar2/sidebar2.component';
-import { HtmlbasicsComponent } from './tutorials/html/htmlbasics/htmlbasics.component';
-import { HtmlstylesComponent } from './tutorials/html/htmlstyles/htmlstyles.component';
-import { HtmltableComponent } from './tutorials/html/htmltable/htmltable.component';
-import { CssbasicsComponent } from './tutorials/css/cssbasics/cssbasics.component';
-import { CssbackgroundComponent } from './tutorials/css/cssbackground/cssbackground.component';
-import { CsstableComponent } from './tutorials/css/csstable/csstable.component';
 import { ViewComponent } from './manage/view/view.component';
 import { MessagesComponent } from './messages/messages.component';
+
+
 
 @NgModule({
   declarations: [
@@ -45,13 +40,6 @@ import { MessagesComponent } from './messages/messages.component';
     RegistrationComponent,
     AboutComponent,
     ManageComponent,
-    Sidebar2Component,
-    HtmlbasicsComponent,
-    HtmlstylesComponent,
-    HtmltableComponent,
-    CssbasicsComponent,
-    CssbackgroundComponent,
-    CsstableComponent,
     ViewComponent,
     MessagesComponent,
   ],
