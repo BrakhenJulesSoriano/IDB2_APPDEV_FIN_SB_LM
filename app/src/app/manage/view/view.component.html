@@ -2,6 +2,7 @@
 <div class="container container-lg">
     <h1>Update User</h1>
     <div class="" *ngIf="user">
+
         <div class="col-12">
           <label class="form-label col-form-label-lg">ID Number</label>
           <input type="number" class="form-control form-control" araia-label="Default" value="{{user.id}}" aria-describedby="inputGroup-sizing-default">
@@ -45,5 +46,4 @@
     <button type="button" class="btn btn-info" (click)="goBack()">Close</button>
     <button type="button" class="btn btn-primary" (click)="save()">Save changes</button>                           
         </div>
-        
 </div>

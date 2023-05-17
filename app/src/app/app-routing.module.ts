@@ -10,10 +10,8 @@ import { ManageComponent } from './manage/manage.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { AboutComponent } from './about/about.component';
 import { ViewComponent } from './manage/view/view.component';
-
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CssComponent } from './tutorials/css/css.component';
-
 import { HtmlComponent } from './tutorials/html/html.component';
 
 const routes: Routes = [
